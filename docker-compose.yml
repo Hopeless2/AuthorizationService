@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  app_1:
+    image: service:latest
+    ports:
+      - 8080:8080
+    environment:
+      TEST: env_docker_compose
+    build: ./
